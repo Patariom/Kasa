@@ -1,0 +1,20 @@
+@import '../../sass-styles/typography';
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto;
+    &__img {
+        height: 68px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px;
+        font-size: 24px;
+        font-weight: map-get($font-weight, regular);
+    }
+}
