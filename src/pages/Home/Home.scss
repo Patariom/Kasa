@@ -1,0 +1,10 @@
+@import "../../sass-styles/main";
+
+.cards-container {
+    display: flex;
+    width: 86%;
+    margin: auto;
+    padding: 4%;
+    background-color: $background-color;
+    @include rounded-corner-big;
+}

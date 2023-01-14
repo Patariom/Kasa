@@ -1,7 +1,18 @@
+//Import COmponents
+import Banner from '../../components/Banner'
+import Card from '../../components/Card'
+
+//Import Style
+import './Home.scss'
+
+//Component
 function Home() {
   return (
     <div>
-      <p>Page d'accueil de l'application Kasa</p>
+      <Banner />
+      <div className="cards-container">
+        <Card />
+      </div>
     </div>
   )
 }

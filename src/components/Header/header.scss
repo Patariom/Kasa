@@ -1,11 +1,10 @@
-@import '../../sass-styles/typography';
-
+@import '../../sass-styles/main';
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 86%;
     margin: 40px auto;
     &__img {
         height: 68px;
