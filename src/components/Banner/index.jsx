@@ -5,11 +5,12 @@
 import './Banner.scss'
 
 //Component
-function Banner() {
+function Banner({ title, picture }) {
   return (
     <div>
       <div className="banner">
-        <h1 className="banner__title">Chez vous, partout et ailleurs</h1>
+        <img className="banner__img" src={picture} alt="" />
+        <h1 className="banner__title">{title}</h1>
       </div>
     </div>
   )

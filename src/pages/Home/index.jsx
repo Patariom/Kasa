@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
 
+//Import image
+import homeBanner from '../../assets/banner_home.png'
+
 //Import Data
 import rentalList from '../../data/logements.json'
 
@@ -13,7 +16,7 @@ import './Home.scss'
 function Home() {
   return (
     <div>
-      <Banner />
+      <Banner picture={homeBanner} title="Chez vous, partout et ailleurs" />
       <section className="rental-section">
         <div className="rental-section__cards-container">
           {rentalList.map((rental) => (
