@@ -1,5 +1,5 @@
 //Import tools
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 //Import Style
 import '../Header/header.scss'
@@ -17,7 +17,9 @@ const navLink = [
 function Header() {
   return (
     <div className="header">
-      <img className="header__logo" src={logo} alt="Kasa" />
+      <Link to="/">
+        <img className="header__logo" src={logo} alt="Kasa" />
+      </Link>
       <nav className="header__nav">
         {navLink.map((item) => (
           <NavLink
