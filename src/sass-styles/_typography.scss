@@ -1,7 +1,7 @@
 @import './variables';
 
-//Settle global base for typography
 
+//Settle global base for typography
 * {
     font-family: 'Montserrat', sans-serif;
     color: $color-primary;
@@ -9,12 +9,15 @@
 
 a {
     text-decoration: none;
-    &--underlined-link {
-        text-decoration: underline;
-    }
+}
+
+//Specific categories
+.active-link {
+    text-decoration: underline;
 }
 
 
+//Font weight map
 $font-weight: (
     light: 400,
     regular: 500,

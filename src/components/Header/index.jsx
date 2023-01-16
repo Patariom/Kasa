@@ -1,5 +1,5 @@
 //Import tools
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 //Import Style
 import '../Header/header.scss'
@@ -7,14 +7,29 @@ import '../Header/header.scss'
 //Import Images
 import logo from '../../assets/logo.svg'
 
+//Data for nav links //All new header link should be added here and in the router
+const navLink = [
+  { name: 'Accueil', href: '/' },
+  { name: 'A Propos', href: '/a-propos' },
+]
+
 //Component
 function Header() {
   return (
     <div className="header">
       <img className="header__logo" src={logo} alt="Kasa" />
       <nav className="header__nav">
-        <Link to="/">Accueil</Link>
-        <Link to="/a-propos">A propos</Link>
+        {navLink.map((item) => (
+          <NavLink
+            to={item.href}
+            key={item.name}
+            className={({ isActive }) => {
+              return isActive ? 'active-link' : ''
+            }}
+          >
+            {item.name}
+          </NavLink>
+        ))}
       </nav>
     </div>
   )
