@@ -6,8 +6,16 @@
     align-items: center;
     width: 86%;
     margin: 50px auto;
-    &__img {
+    @include smartphone-responsive {
+        flex-wrap: wrap;
+        margin: 20px auto;
+    }
+    &__logo{
         height: 68px;
+        @include smartphone-responsive {
+            height: 47px;
+            flex-wrap: wrap;
+        }
     }
     &__nav {
         display: flex;
@@ -15,5 +23,9 @@
         gap: 50px;
         font-size: 24px;
         font-weight: map-get($font-weight, regular);
+        @include smartphone-responsive {
+            font-size: 12px;
+            gap: 15px;
+        }
     }
 }

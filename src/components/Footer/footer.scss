@@ -14,5 +14,11 @@
         font-size: 24px;
         color: #ffffff;
         padding: 1% 0%;
+        @include smartphone-responsive {
+            font-size: 12px;
+        }
+        @include tablet-responsive {
+            font-size: 18px;
+        }
     }
 }

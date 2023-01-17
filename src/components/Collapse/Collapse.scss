@@ -15,10 +15,16 @@
         border: none;
         padding: 2%;
         @include rounded-corner-small;
+        @include smartphone-responsive {
+            height: 30px;
+        }
         &__title {
             color: white;
             font-size: 24px;
             font-weight: map-get($font-weight, regular);
+            @include smartphone-responsive {
+                font-size: 13px;
+            }
         }
         &__icon {
             color: white;
@@ -31,5 +37,8 @@
         font-weight: map-get($font-weight, light);
         @include object-shadow;
         @include rounded-corner-small;
+        @include smartphone-responsive {
+            font-size: 12px;
+        }
     }
 }

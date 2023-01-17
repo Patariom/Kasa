@@ -9,6 +9,11 @@
     @include object-shadow;
     overflow: hidden;
     transition: box-shadow 200ms ease-in-out;
+    @include smartphone-responsive {
+        height: 255px;
+        width: 100%;
+    }
+ 
     &:hover {
         @include object-shadow(rgba(0, 0, 0, 0.4));
         &::before{

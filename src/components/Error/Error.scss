@@ -1,17 +1,41 @@
 @import '../../sass-styles/main';
 
 .error {
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     &__title {
         font-size: 288px;
         margin: 1%;
+        @include smartphone-responsive {
+            font-size: 96px;
+        }
+        @include tablet-responsive {
+            font-size: 180px;
+        }
     }
     &__message {
         font-size: 36px;
         margin-bottom: 10%;
+        @include smartphone-responsive {
+            font-size: 18px;
+            margin-bottom: 15%;
+        }
+        @include tablet-responsive {
+            font-size: 28px;
+            margin-bottom: 15%;
+        }
+    }
+    &__redirect {
+        font-size: 18px;
+        @include smartphone-responsive {
+            font-size: 14px;
+        }
+        @include tablet-responsive {
+            font-size: 16px;
+        }
     }
 }

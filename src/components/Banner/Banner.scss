@@ -7,9 +7,16 @@
     margin: 60px auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     @include rounded-corner-big;
     @include object-shadow;
     overflow: hidden;
+    @include smartphone-responsive {
+        justify-content: flex-start;
+        height: 111px;
+        margin: 20px auto;
+    }
+
     &::before{
         position: absolute;
         right: 0px;
@@ -29,11 +36,17 @@
     }
     &__title {
         position: absolute;
-        bottom: 22%;
+        padding: 5%;
         color: white;
         font-size: 48px;  
         font-weight: map-get($font-weight, regular);
-        text-align: center;
         @include text-shadow;
+        @include smartphone-responsive {
+            font-size: 24px;
+        }
+        @include tablet-responsive {
+            text-align: center;
+            margin: 30px auto;
+        }
     }
 }

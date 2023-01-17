@@ -12,7 +12,9 @@ function Error() {
         Oups! La page que vous demandez n'existe pas.
       </p>
       <Link to="/">
-        <p className="active-link">Retourner sur la page d’accueil</p>
+        <p className="error__redirect active-link">
+          Retourner sur la page d’accueil
+        </p>
       </Link>
     </div>
   )
