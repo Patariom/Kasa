@@ -1,6 +1,3 @@
-// //Import image
-// import homeBanner from '../../assets/banner.png'
-
 //Import Style
 import './Banner.scss'
 
