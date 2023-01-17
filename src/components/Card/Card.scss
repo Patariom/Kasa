@@ -8,6 +8,15 @@
     @include rounded-corner-medium;
     @include object-shadow;
     overflow: hidden;
+    transition: box-shadow 200ms ease-in-out;
+    &:hover {
+        @include object-shadow(rgba(0, 0, 0, 0.4));
+        &::before{
+            content:"";
+            background-color: darken($color-primary, 55%);
+            opacity: 40%;
+        }
+    }
     &::before{
         position: absolute;
         right: 0px;
@@ -17,6 +26,7 @@
         z-index: 0;
         content:"";
         background: $gradient-to-black;
+        transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
     }
     &__img {
         width: 100%;
