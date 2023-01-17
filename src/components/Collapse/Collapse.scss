@@ -1,0 +1,35 @@
+@import '../../sass-styles/main';
+
+.collapse {
+    background-color: $background-color;
+    @include rounded-corner-small;
+    margin-bottom: 3%;
+    &__title-container {
+        width: 100%;
+        height: 47px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-primary;
+        border: none;
+        padding: 2%;
+        @include rounded-corner-small;
+        &__title {
+            color: white;
+            font-size: 24px;
+            font-weight: map-get($font-weight, regular);
+        }
+        &__icon {
+            color: white;
+        }
+    }
+    &__text {
+        width: 100%;
+        padding: 2.5% 2%;
+        font-size: 24px;
+        font-weight: map-get($font-weight, light);
+        @include object-shadow;
+        @include rounded-corner-small;
+    }
+}

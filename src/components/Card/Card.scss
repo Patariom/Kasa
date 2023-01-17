@@ -5,7 +5,7 @@
     width: 340px;
     height: 340px;
     background-color: $color-primary;
-    @include rounded-corner-small;
+    @include rounded-corner-medium;
     @include object-shadow;
     overflow: hidden;
     &::before{

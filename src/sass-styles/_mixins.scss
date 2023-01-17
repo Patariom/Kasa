@@ -3,8 +3,12 @@
     border-radius: 25px;
 }
 
-@mixin rounded-corner-small {
+@mixin rounded-corner-medium {
     border-radius: 10px;
+}
+
+@mixin rounded-corner-small {
+    border-radius: 5px;
 }
 
 //Text Drop Shadow
