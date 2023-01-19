@@ -1,9 +1,6 @@
 //Import tools
 import { Link } from 'react-router-dom'
 
-//Import style
-import './Error.scss'
-
 function Error() {
   return (
     <div className="error">

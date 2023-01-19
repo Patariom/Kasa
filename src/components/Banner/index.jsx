@@ -1,6 +1,3 @@
-//Import Style
-import './Banner.scss'
-
 //Component
 function Banner({ title, picture }) {
   return (

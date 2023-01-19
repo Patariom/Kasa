@@ -9,9 +9,6 @@ import homeBanner from '../../assets/banner_home.png'
 //Import Data
 import rentalList from '../../data/logements.json'
 
-//Import Style
-import './Home.scss'
-
 //Component
 function Home() {
   return (

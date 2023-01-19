@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 
-// //Import Style
-// import './styles/index.css'
+//Import Style
+import './style.css'
 
 //Import Pages
 import Home from './pages/Home/index'

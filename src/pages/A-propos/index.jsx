@@ -5,9 +5,6 @@ import Collapse from '../../components/Collapse'
 //Import image
 import aboutBanner from '../../assets/banner_aboutkasa.png'
 
-//Import Style
-import './A-propos.scss'
-
 //Import Data
 const values = [
   {
@@ -32,9 +29,9 @@ function AboutKasa() {
   return (
     <div>
       <Banner picture={aboutBanner} title="" />
-      <section class="kasa-values">
+      <section className="kasa-values">
         {values.map((item) => (
-          <Collapse title={item.title} text={item.text} />
+          <Collapse key={item.title} title={item.title} text={item.text} />
         ))}
       </section>
     </div>

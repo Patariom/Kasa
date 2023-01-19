@@ -1,9 +1,6 @@
 //Import tools
 import { Link, NavLink } from 'react-router-dom'
 
-//Import Style
-import '../Header/header.scss'
-
 //Import Images
 import logo from '../../assets/logo.svg'
 

@@ -1,0 +1,348 @@
+/* Rounded Corner */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #FF6060;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+.banner {
+  position: relative;
+  width: 86%;
+  height: 223px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+@media all and (max-width: 768px) {
+  .banner {
+    justify-content: flex-start;
+    height: 111px;
+    margin: 20px auto;
+  }
+}
+.banner::before {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  content: "";
+  background-color: black;
+  opacity: 30%;
+}
+.banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner__title {
+  position: absolute;
+  padding: 5%;
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media all and (max-width: 768px) {
+  .banner__title {
+    font-size: 24px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .banner__title {
+    text-align: center;
+    margin: 30px auto;
+  }
+}
+
+.card {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  background-color: #FF6060;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: box-shadow 200ms ease-in-out;
+}
+@media all and (max-width: 768px) {
+  .card {
+    height: 255px;
+    width: 100%;
+  }
+}
+.card:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.card:hover::before {
+  content: "";
+  background-color: #470000;
+  opacity: 40%;
+}
+.card::before {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__title {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  padding: 5%;
+  margin: 0;
+  font-weight: 500;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.collapse {
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  margin-bottom: 3%;
+}
+.collapse__title-container {
+  width: 100%;
+  height: 47px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  border: none;
+  padding: 2%;
+  transition: background-color 200ms ease-in-out;
+  border-radius: 5px;
+}
+@media all and (max-width: 768px) {
+  .collapse__title-container {
+    height: 30px;
+  }
+}
+.collapse__title-container:hover {
+  background-color: #ff8989;
+}
+.collapse__title-container__title {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media all and (max-width: 768px) {
+  .collapse__title-container__title {
+    font-size: 13px;
+  }
+}
+.collapse__title-container__icon {
+  color: white;
+  transition: transform 300ms ease-in-out;
+}
+.collapse__title-container__icon:active {
+  transform: rotate(-180deg);
+}
+.collapse__text {
+  width: 100%;
+  padding: 2.5% 2%;
+  font-size: 24px;
+  font-weight: 400;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+@media all and (max-width: 768px) {
+  .collapse__text {
+    font-size: 12px;
+  }
+}
+
+.error {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.error__title {
+  font-size: 288px;
+  margin: 1%;
+}
+@media all and (max-width: 768px) {
+  .error__title {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .error__title {
+    font-size: 180px;
+  }
+}
+.error__message {
+  font-size: 36px;
+  margin-bottom: 10%;
+}
+@media all and (max-width: 768px) {
+  .error__message {
+    font-size: 18px;
+    margin-bottom: 15%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .error__message {
+    font-size: 28px;
+    margin-bottom: 15%;
+  }
+}
+.error__redirect {
+  font-size: 18px;
+}
+@media all and (max-width: 768px) {
+  .error__redirect {
+    font-size: 14px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .error__redirect {
+    font-size: 16px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  margin-top: 50px;
+}
+.footer__logo {
+  width: 122px;
+  padding-top: 4%;
+}
+.footer__disclaimer {
+  font-size: 24px;
+  color: #ffffff;
+  padding: 1% 0%;
+}
+@media all and (max-width: 768px) {
+  .footer__disclaimer {
+    font-size: 12px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .footer__disclaimer {
+    font-size: 18px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86%;
+  margin: 50px auto;
+}
+@media all and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+}
+.header__logo {
+  height: 68px;
+}
+@media all and (max-width: 768px) {
+  .header__logo {
+    height: 47px;
+    flex-wrap: wrap;
+  }
+}
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media all and (max-width: 768px) {
+  .header__nav {
+    font-size: 12px;
+    gap: 15px;
+  }
+}
+
+.kasa-values {
+  width: 71%;
+  margin: auto;
+}
+@media all and (max-width: 768px) {
+  .kasa-values {
+    width: 86%;
+  }
+}
+
+.rental-section {
+  width: 86%;
+  margin: auto;
+  background-color: #F6F6F6;
+  padding: 60px 50px;
+  border-radius: 25px;
+}
+@media all and (max-width: 768px) {
+  .rental-section {
+    background-color: white;
+    padding: 20px 0px;
+  }
+}
+.rental-section__cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+@media all and (max-width: 768px) {
+  .rental-section__cards-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .rental-section__cards-container {
+    gap: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

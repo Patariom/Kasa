@@ -1,4 +1,16 @@
-@import "./global";
-@import "./mixins";
-@import "./typography";
 @import "./variables";
+@import "./mixins";
+@import "./global";
+@import "./typography";
+
+//Components import (each style file is in the folder of the related component)
+@import "../components/Banner/Banner";
+@import "../components/Card/Card";
+@import "../components/Collapse/Collapse";
+@import "../components/Error/Error.scss";
+@import "../components/Footer/Footer";
+@import "../components/Header/Header";
+
+//Pages layout import (each style file is in the folder of the related page)
+@import "../pages/A-propos/A-propos"; 
+@import "../pages/Home/Home";

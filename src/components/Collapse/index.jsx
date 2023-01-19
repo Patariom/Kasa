@@ -1,11 +1,8 @@
 //Import tools
 import React, { useState } from 'react'
 
-//Import Style
-import './Collapse.scss'
-
 //Import image
-import expandArrow from '../../assets/expand_arrow.png'
+import expandArrow from '../../assets/expand_arrow.svg'
 
 //Component
 function Collapse({ title, text }) {
@@ -17,7 +14,11 @@ function Collapse({ title, text }) {
     <div className="collapse">
       <button className="collapse__title-container" onClick={toggle}>
         <h2 className="collapse__title-container__title">{title}</h2>
-        <img src={expandArrow} alt="Cliquez-ici pour dérouler le texte" />
+        <img
+          className="collapse__title-container__icon"
+          src={expandArrow}
+          alt="Cliquez-ici pour dérouler le texte"
+        />
       </button>
       {open && <div className="collapse__text">{text}</div>}
     </div>

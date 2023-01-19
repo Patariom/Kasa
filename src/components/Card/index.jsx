@@ -1,6 +1,3 @@
-//Import Style
-import './Card.scss'
-
 //Component
 function Card({ title, picture }) {
   return (

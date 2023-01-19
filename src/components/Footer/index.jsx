@@ -1,6 +1,3 @@
-//Import Style
-import '../Footer/footer.scss'
-
 //Import Images
 import logoWhite from '../../assets/logo_white.svg'
 
