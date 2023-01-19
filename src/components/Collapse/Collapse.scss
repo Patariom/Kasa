@@ -30,9 +30,10 @@
         }
         &__icon {
             color: white;
-            transition: transform 300ms ease-in-out;
-            &:active {
-                transform: rotate(-180deg);
+            transition: transform 200ms ease-in-out;
+            &--opened {
+                transform:rotate(-180deg);            
+                transition: transform 200ms ease-in-out;
             }
         }
     }
@@ -44,7 +45,7 @@
         @include object-shadow;
         @include rounded-corner-small;
         @include smartphone-responsive {
-            font-size: 12px;
+            font-size: 12px;           
         }
     }
 }

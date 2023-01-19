@@ -15,7 +15,11 @@ function Collapse({ title, text }) {
       <button className="collapse__title-container" onClick={toggle}>
         <h2 className="collapse__title-container__title">{title}</h2>
         <img
-          className="collapse__title-container__icon"
+          className={
+            !open
+              ? 'collapse__title-container__icon'
+              : 'collapse__title-container__icon--opened'
+          }
           src={expandArrow}
           alt="Cliquez-ici pour dérouler le texte"
         />

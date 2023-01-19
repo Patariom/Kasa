@@ -168,10 +168,11 @@ a {
 }
 .collapse__title-container__icon {
   color: white;
-  transition: transform 300ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
-.collapse__title-container__icon:active {
+.collapse__title-container__icon--opened {
   transform: rotate(-180deg);
+  transition: transform 200ms ease-in-out;
 }
 .collapse__text {
   width: 100%;
@@ -285,7 +286,6 @@ a {
 @media all and (max-width: 768px) {
   .header__logo {
     height: 47px;
-    flex-wrap: wrap;
   }
 }
 .header__nav {
