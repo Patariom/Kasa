@@ -31,7 +31,13 @@ function AboutKasa() {
       <Banner picture={aboutBanner} title="" />
       <section className="kasa-values">
         {values.map((item) => (
-          <Collapse key={item.title} title={item.title} text={item.text} />
+          <Collapse
+            key={item.title}
+            title={item.title}
+            text={item.text}
+            className="collapse"
+            state={false}
+          />
         ))}
       </section>
     </div>

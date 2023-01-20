@@ -2,6 +2,11 @@
     background-color: $background-color;
     @include rounded-corner-small;
     margin-bottom: 3%;
+    &--small {
+        width: 45%;
+        background-color: $background-color;
+        margin-bottom: 3%;
+    }
     &__title-container {
         width: 100%;
         height: 47px;
