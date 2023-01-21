@@ -1,10 +1,8 @@
 .collapse {
-    background-color: $background-color;
     @include rounded-corner-small;
     margin-bottom: 3%;
     &--small {
         width: 45%;
-        background-color: $background-color;
         margin-bottom: 3%;
     }
     &__title-container {
@@ -47,6 +45,7 @@
         padding: 2.5% 2%;
         font-size: 24px;
         font-weight: map-get($font-weight, light);
+        background-color: $background-color;
         @include object-shadow;
         @include rounded-corner-small;
         @include smartphone-responsive {
