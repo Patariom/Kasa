@@ -1,6 +1,3 @@
-@import './variables';
-
-
 //Settle global base for typography
 * {
     font-family: 'Montserrat', sans-serif;
@@ -9,6 +6,10 @@
 
 a {
     text-decoration: none;
+}
+
+ul, li {
+    list-style-type: none;
 }
 
 //Specific categories

@@ -17,8 +17,36 @@ a {
   text-decoration: none;
 }
 
+ul, li {
+  list-style-type: none;
+}
+
 .active-link {
   text-decoration: underline;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px;
+  margin: 20px 0;
+}
+.tags__text {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #FF6060;
+  height: 25px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .banner {
@@ -131,9 +159,11 @@ a {
 }
 
 .collapse {
-  background-color: #F6F6F6;
   border-radius: 5px;
   margin-bottom: 3%;
+}
+.collapse--small {
+  width: 45%;
 }
 .collapse__title-container {
   width: 100%;
@@ -170,15 +200,20 @@ a {
   color: white;
   transition: transform 200ms ease-in-out;
 }
+@media all and (max-width: 768px) {
+  .collapse__title-container__icon {
+    width: 18px;
+  }
+}
 .collapse__title-container__icon--opened {
   transform: rotate(-180deg);
-  transition: transform 200ms ease-in-out;
 }
 .collapse__text {
   width: 100%;
   padding: 2.5% 2%;
   font-size: 24px;
   font-weight: 400;
+  background-color: #F6F6F6;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
@@ -302,6 +337,51 @@ a {
   }
 }
 
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86%;
+  margin: auto;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.carousel__slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  transition: transform 800ms ease-in-out;
+}
+.carousel__slider__pictures {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.carousel__arrow {
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  right: 1%;
+}
+.carousel__arrow--backward {
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  left: 1%;
+  transform: rotate(-180deg);
+}
+.carousel__photocount {
+  position: absolute;
+  bottom: 2%;
+  color: white;
+  font-size: 18px;
+}
+
 .kasa-values {
   width: 71%;
   margin: auto;
@@ -343,6 +423,52 @@ a {
   .rental-section__cards-container {
     gap: 40px;
   }
+}
+
+.rental-page {
+  width: 86%;
+  margin: auto;
+}
+
+.rental-info-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.rental-info__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+}
+.rental-info__location {
+  font-size: 18px;
+  margin: 0;
+}
+
+.renter-info__identity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.renter-info__identity__name {
+  width: 100px;
+  text-align: right;
+  font-size: 18px;
+  margin: 0;
+}
+.renter-info__identity__pic {
+  height: 64px;
+  width: 64px;
+  border-radius: 90px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rental-collapse-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

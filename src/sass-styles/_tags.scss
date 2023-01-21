@@ -1,0 +1,18 @@
+.tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
+    margin: 20px 0;
+    &__text {
+        display: flex;
+        align-items: center;
+        @include rounded-corner-medium;
+        background-color: $color-primary;
+        height: 25px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        padding: 0px 15px;
+    }
+}
