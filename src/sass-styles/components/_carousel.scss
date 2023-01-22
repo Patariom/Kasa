@@ -1,0 +1,52 @@
+.carousel {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 415px;
+    overflow: hidden;
+    @include rounded-corner-big;
+    &__slider {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        transition: transform 800ms ease-in-out;
+            &__pictures {
+                height: 415px;
+                max-height: 415px;
+                width: 100%;
+                min-width: 100%;
+                object-fit: cover;
+            }
+    }
+    &__commands {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+            &__photocount {
+                position: absolute;
+                color: white;
+                font-size: 18px;
+                bottom: 2%;
+                right: 50%;
+                margin: 0;
+            }
+            &__arrows {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin: 1%;
+                &__arrow {
+                    border: none;
+                    background-color: transparent;
+                    &--backward {
+                        transform:rotate(-180deg);            
+                    }
+                }
+            }
+        }
+}
