@@ -1,0 +1,82 @@
+.rental-page {
+    width: 86%;
+    margin: auto;
+}
+
+.rental-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    @include smartphone-responsive {
+        display: flex;
+        flex-direction: column;
+        margin: 15px auto;
+    }
+}
+
+.rental-info {
+    &__title {
+        margin: 0;
+        font-size: 36px;
+        font-weight: map-get($font-weight, regular);
+        @include smartphone-responsive {
+            font-size: 18px;
+        }
+    }
+    &__location {
+        font-size: 18px;
+        margin: 0;
+        font-weight: map-get($font-weight, regular);
+        @include smartphone-responsive {
+            font-size: 14px;
+        }
+    }
+}
+
+
+.renter-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @include smartphone-responsive {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__identity {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        &__name {
+            width: 100px;
+            text-align: right;
+            font-size: 18px;
+            margin: 0;
+            @include smartphone-responsive {
+                font-size: 12px;
+            }
+        }
+        &__pic {
+            height: 64px;
+            width: 64px;
+            border-radius: 90px;
+            @include smartphone-responsive {
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+}
+
+.rental-collapse-container {
+    display: flex;
+    justify-content: space-between;
+    @include smartphone-responsive {
+        flex-direction: column;
+    }
+    @include tablet-responsive {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,12 @@
+.rating-container {
+    display: flex;
+    justify-content: flex-end;
+    &__stars {
+        width: 36px;
+        height: 36px;
+        @include smartphone-responsive {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

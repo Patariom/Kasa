@@ -25,30 +25,6 @@ ul, li {
   text-decoration: underline;
 }
 
-.tags {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 0px;
-  margin: 20px 0;
-}
-.tags__text {
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  background-color: #FF6060;
-  height: 25px;
-  color: white;
-  font-size: 14px;
-  text-align: center;
-  padding: 0px 15px;
-}
-
-.rating-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .banner {
   position: relative;
   width: 86%;
@@ -58,7 +34,6 @@ ul, li {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 @media all and (max-width: 768px) {
@@ -66,6 +41,11 @@ ul, li {
     justify-content: flex-start;
     height: 111px;
     margin: 20px auto;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    margin: 40px auto;
   }
 }
 .banner::before {
@@ -111,7 +91,6 @@ ul, li {
   height: 340px;
   background-color: #FF6060;
   border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   transition: box-shadow 200ms ease-in-out;
 }
@@ -121,8 +100,11 @@ ul, li {
     width: 100%;
   }
 }
-.card:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 260px;
+    height: 260px;
+  }
 }
 .card:hover::before {
   content: "";
@@ -158,12 +140,121 @@ ul, li {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.carousel {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+@media all and (max-width: 768px) {
+  .carousel {
+    height: 255px;
+    border-radius: 25px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .carousel {
+    height: 330px;
+  }
+}
+.carousel__slider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: transform 800ms ease-in-out;
+}
+.carousel__slider__pictures {
+  height: 415px;
+  max-height: 415px;
+  width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+@media all and (max-width: 768px) {
+  .carousel__slider__pictures {
+    height: 255px;
+    max-height: 255px;
+  }
+}
+@media all and (max-width: 768px) {
+  .carousel__slider__pictures {
+    height: 330px;
+    max-height: 330px;
+  }
+}
+.carousel__commands {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel__commands__photocount {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  bottom: 2%;
+  right: 50%;
+  margin: 0;
+}
+@media all and (max-width: 768px) {
+  .carousel__commands__photocount {
+    display: none;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .carousel__commands__photocount {
+    font-size: 14px;
+  }
+}
+.carousel__commands__arrows {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1%;
+}
+.carousel__commands__arrows__arrow {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  height: 80px;
+  justify-content: flex-end;
+}
+@media all and (max-width: 768px) {
+  .carousel__commands__arrows__arrow {
+    height: 24px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .carousel__commands__arrows__arrow {
+    height: 56px;
+  }
+}
+.carousel__commands__arrows__arrow--backward {
+  transform: rotate(-180deg);
+}
+
 .collapse {
   border-radius: 5px;
   margin-bottom: 3%;
 }
 .collapse--small {
   width: 45%;
+}
+@media all and (max-width: 768px) {
+  .collapse--small {
+    width: 100%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .collapse--small {
+    width: 100%;
+  }
 }
 .collapse__title-container {
   width: 100%;
@@ -210,11 +301,10 @@ ul, li {
 }
 .collapse__text {
   width: 100%;
-  padding: 2.5% 2%;
+  padding: 5% 3%;
   font-size: 24px;
   font-weight: 400;
   background-color: #F6F6F6;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 @media all and (max-width: 768px) {
@@ -225,7 +315,7 @@ ul, li {
 
 .error {
   width: 80%;
-  margin: auto;
+  margin: 20% auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -333,53 +423,56 @@ ul, li {
 @media all and (max-width: 768px) {
   .header__nav {
     font-size: 12px;
-    gap: 15px;
+    gap: 10px;
+    text-transform: uppercase;
   }
 }
 
-.carousel {
-  position: relative;
+.rating-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.rating-container__stars {
+  width: 36px;
+  height: 36px;
+}
+@media all and (max-width: 768px) {
+  .rating-container__stars {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.tags {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 86%;
-  margin: auto;
-  height: 415px;
-  overflow: hidden;
-  border-radius: 25px;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px;
+  margin: 20px 0;
 }
-.carousel__slider {
-  width: 100%;
-  height: 100%;
+@media all and (max-width: 768px) {
+  .tags {
+    margin: 15px 0;
+  }
+}
+.tags__text {
   display: flex;
-  flex-direction: row;
-  transition: transform 800ms ease-in-out;
-}
-.carousel__slider__pictures {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-.carousel__arrow {
-  position: absolute;
-  z-index: 1;
-  border: none;
-  background-color: transparent;
-  right: 1%;
-}
-.carousel__arrow--backward {
-  position: absolute;
-  z-index: 1;
-  border: none;
-  background-color: transparent;
-  left: 1%;
-  transform: rotate(-180deg);
-}
-.carousel__photocount {
-  position: absolute;
-  bottom: 2%;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #FF6060;
+  height: 25px;
   color: white;
-  font-size: 18px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  padding: 0px 15px;
+}
+@media all and (max-width: 768px) {
+  .tags__text {
+    height: 18px;
+    font-size: 10px;
+  }
 }
 
 .kasa-values {
@@ -433,7 +526,14 @@ ul, li {
 .rental-info-container {
   display: flex;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 20px auto;
+}
+@media all and (max-width: 768px) {
+  .rental-info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+  }
 }
 
 .rental-info__title {
@@ -441,17 +541,40 @@ ul, li {
   font-size: 36px;
   font-weight: 500;
 }
+@media all and (max-width: 768px) {
+  .rental-info__title {
+    font-size: 18px;
+  }
+}
 .rental-info__location {
   font-size: 18px;
   margin: 0;
+  font-weight: 500;
+}
+@media all and (max-width: 768px) {
+  .rental-info__location {
+    font-size: 14px;
+  }
 }
 
+.renter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media all and (max-width: 768px) {
+  .renter-info {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .renter-info__identity {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-  margin-bottom: 10px;
 }
 .renter-info__identity__name {
   width: 100px;
@@ -459,16 +582,36 @@ ul, li {
   font-size: 18px;
   margin: 0;
 }
+@media all and (max-width: 768px) {
+  .renter-info__identity__name {
+    font-size: 12px;
+  }
+}
 .renter-info__identity__pic {
   height: 64px;
   width: 64px;
   border-radius: 90px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media all and (max-width: 768px) {
+  .renter-info__identity__pic {
+    height: 32px;
+    width: 32px;
+  }
 }
 
 .rental-collapse-container {
   display: flex;
   justify-content: space-between;
+}
+@media all and (max-width: 768px) {
+  .rental-collapse-container {
+    flex-direction: column;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .rental-collapse-container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

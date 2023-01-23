@@ -7,14 +7,15 @@
     justify-content: center;
     align-items: center;
     @include rounded-corner-big;
-    @include object-shadow;
     overflow: hidden;
     @include smartphone-responsive {
         justify-content: flex-start;
         height: 111px;
         margin: 20px auto;
     }
-
+    @include tablet-responsive {
+        margin: 40px auto;
+    }
     &::before{
         position: absolute;
         right: 0px;

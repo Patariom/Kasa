@@ -2,19 +2,20 @@
 @import "./mixins";
 @import "./global";
 @import "./typography";
-@import "./tags";
-@import "./rating";
 
-//Components import (each style file is in the folder of the related component)
-@import "../components/Banner/Banner";
-@import "../components/Card/Card";
-@import "../components/Collapse/Collapse";
-@import "../components/Error/Error";
-@import "../components/Footer/Footer";
-@import "../components/Header/Header";
-@import "../components/Carousel/Carousel";
+//Components import 
+@import "./components/banner";
+@import "./components/card";
+@import "./components/carousel";
+@import "./components/collapse";
+@import "./components/error";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/rating";
+@import "./components/tags";
 
-//Pages layout import (each style file is in the folder of the related page)
-@import "../pages/A-propos/A-propos"; 
-@import "../pages/Home/Home";
-@import "../pages/Logement/Rental";
+
+//Pages layout import 
+@import "./pages/about-Kasa";
+@import "./pages/home";
+@import "./pages/rental";

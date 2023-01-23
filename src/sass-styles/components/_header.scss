@@ -22,7 +22,8 @@
         font-weight: map-get($font-weight, regular);
         @include smartphone-responsive {
             font-size: 12px;
-            gap: 15px;
+            gap: 10px;
+            text-transform: uppercase;
         }
     }
 }

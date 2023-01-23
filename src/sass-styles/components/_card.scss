@@ -4,16 +4,18 @@
     height: 340px;
     background-color: $color-primary;
     @include rounded-corner-medium;
-    @include object-shadow;
     overflow: hidden;
     transition: box-shadow 200ms ease-in-out;
     @include smartphone-responsive {
         height: 255px;
         width: 100%;
     }
+    @include tablet-responsive {
+        width: 260px;
+        height: 260px;
+    }
  
     &:hover {
-        @include object-shadow(rgba(0, 0, 0, 0.4));
         &::before{
             content:"";
             background-color: darken($color-primary, 55%);

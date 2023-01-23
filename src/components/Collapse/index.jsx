@@ -18,7 +18,7 @@ function Collapse({ title, text, className, state }) {
           className={
             !open
               ? 'collapse__title-container__icon'
-              : 'collapse__title-container__icon--opened'
+              : 'collapse__title-container__icon collapse__title-container__icon--opened'
           }
           src={expandArrow}
           alt="Cliquez-ici pour dérouler le texte"

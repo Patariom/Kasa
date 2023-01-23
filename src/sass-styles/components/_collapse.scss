@@ -3,7 +3,12 @@
     margin-bottom: 3%;
     &--small {
         width: 45%;
-        margin-bottom: 3%;
+        @include smartphone-responsive {
+            width: 100%;
+        }
+        @include tablet-responsive {
+            width: 100%;
+        }
     }
     &__title-container {
         width: 100%;
@@ -34,19 +39,20 @@
         &__icon {
             color: white;
             transition: transform 200ms ease-in-out;
+            @include smartphone-responsive {
+                width: 18px;           
+            }
             &--opened {
                 transform:rotate(-180deg);            
-                transition: transform 200ms ease-in-out;
             }
         }
     }
     &__text {
         width: 100%;
-        padding: 2.5% 2%;
+        padding: 5% 3%;
         font-size: 24px;
         font-weight: map-get($font-weight, light);
         background-color: $background-color;
-        @include object-shadow;
         @include rounded-corner-small;
         @include smartphone-responsive {
             font-size: 12px;           
