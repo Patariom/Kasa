@@ -1,6 +1,6 @@
 # Kasa
 
-<img width="800" alt="ImageWebsite" src="https://github.com/Patariom/kasa/blob/dev/public/cover%20img/ImageWebsite.PNG?raw=true">
+<img width="500" alt="ImageWebsite" src="https://github.com/Patariom/kasa/blob/dev/public/cover%20img/ImageWebsite.PNG?raw=true">
 
 ## English
 
