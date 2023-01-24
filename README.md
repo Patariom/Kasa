@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Kasa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="713" alt="ImageWebsite" src="">
 
-## Available Scripts
+## English
 
-In the project directory, you can run:
+(click on the link to go directly to the [french version](#français))
 
-### `npm start`
+_This work is the final project of OpenClassrooms Web Developer training._
+This repo contains the Kasa web app.
+Kasa is an 10-years old agency specialized in the private rental. They recently decided to upgrade their web app using Node-Js for the back-end and React-Js for the front-end.
+This repo is focused on the front-end.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project uses the following tools :
+:arrow_right: React 18.2.0 ([React Website](https://reactjs.org/))
+:arrow_right: React Router ([React Router Website](https://reactrouter.com/en/main))
+:arrow_right: Dart-Sass ([Sass Website](https://sass-lang.com/dart-sass)
 
-### `npm test`
+The project was launched with [Create-React-App](https://github.com/facebook/create-react-app)
+You will have to have Node installed : [Node Website](https://nodejs.org/fr/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How to install
 
-### `npm run build`
+:one: Clone or download this repo into the created folder
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+:two: From the folder in your Code Editor, open a terminal and install the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+:three: Type the following instructions to launch the project :
 
-### `npm run eject`
+```
+npm run start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app will run on [http://localhost:3000](http://localhost:3000)
+The page will reload with every changes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+:four: If you want to make changes to the style of the project, launch Sass :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm run sass
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+All the styling rules are in the src/sass-files folder. Sass will automatically auto-compile your changes dans save it in the style.css file.
 
-## Learn More
+You're all set !
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Français
 
-### Code Splitting
+(click on the link to go directly to the [english version](#english))
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+_Ce travail a été réalisé pour le projet final de la formation Développeur Web d'OpenClassrooms._
+This repo contient le front-end de la web-app de la société Kasa.
+Kasa est spécialisé dans la location de biens immobiliers de particulier à particulier depuis 10 ans. La société a récemment décidé de faire une refonte totale de leur site en utilisant Node-Js pour le back-end et React-Js pour le front-end.
 
-### Analyzing the Bundle Size
+### Pré-requis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ce project utilise les outils suivants :
 
-### Making a Progressive Web App
+:arrow_right: React 18.2.0 ([React Website](https://reactjs.org/))
+:arrow_right: React Router ([React Router Website](https://reactrouter.com/en/main))
+:arrow_right: Dart-Sass ([Sass Website](https://sass-lang.com/dart-sass)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Le projet a été amorcé avec [Create-React-App](https://github.com/facebook/create-react-app)
+Il faudra installer Node ([Node Website](https://nodejs.org/fr/))
 
-### Advanced Configuration
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+:one: Clonez ou téléchargez ce repo
 
-### Deployment
+:two: Depuis le dossier du repo dans votre IDE, ouvrez un terminal et installez le projet :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+npm install
+```
 
-### `npm run build` fails to minify
+:three: Tapez l'instruction suivante pour lancer le projet :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+npm run start
+```
+
+le projet se lancera via la page [http://localhost:3000](http://localhost:3000)
+A chaque changement, la page se rechargera.
+
+:four: Si vous souhaitez modifier le style, vous pouvez lancer Sass :
+
+```
+npm run sass
+```
+
+Tous les fichiers de style sont rangés dans le dossier src/sass-files.
+Sass compilera automatiquement tous les changements dans le fichier style.css.
+
+---
+
+Tout est bon !
