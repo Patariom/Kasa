@@ -46,7 +46,6 @@ function Rental() {
           className="collapse collapse--small"
           title="Description"
           text={rental.description}
-          state={true}
         />
         <Collapse
           className="collapse collapse--small"

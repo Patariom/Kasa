@@ -40,7 +40,6 @@ function AboutKasa() {
             title={item.title}
             text={item.text}
             className="collapse"
-            state={false}
           />
         ))}
       </section>

@@ -5,8 +5,8 @@ import React, { useState } from 'react'
 import expandArrow from '../../assets/expand_arrow.svg'
 
 //Component
-function Collapse({ title, text, className, state }) {
-  const [open, setOpen] = useState(state)
+function Collapse({ title, text, className }) {
+  const [open, setOpen] = useState(false)
   const toggle = () => {
     setOpen(!open)
   }
