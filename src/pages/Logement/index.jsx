@@ -1,5 +1,6 @@
 //Import tools
 import { useParams } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 //Import Data
 import rentalList from '../../data/logements.json'
@@ -7,7 +8,6 @@ import rentalList from '../../data/logements.json'
 //Import Components
 import Carousel from '../../components/Carousel'
 import Collapse from '../../components/Collapse'
-import Error from '../../components/Error'
 import Rating from '../../components/Rating'
 import Tags from '../../components/Tags'
 
@@ -16,8 +16,9 @@ function Rental() {
   const rental = rentalList.find((i) => i.id === rentalId)
 
   if (!rental) {
-    return <Error />
+    return <Navigate to="/adresse-introuvable" />
   }
+
   return (
     <section className="rental-page">
       <Carousel slides={rental.pictures} />

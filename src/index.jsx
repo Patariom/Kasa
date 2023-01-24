@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 //Import Style
 import './style.css'
@@ -25,7 +26,11 @@ root.render(
         <Route exact path="/" element={<Home />} />
         <Route path="/logement/:rentalId" element={<Rental />} />
         <Route path="/a-propos" element={<AboutKasa />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/adresse-introuvable" element={<Error />} />
+        <Route
+          path="*"
+          element={<Navigate to="/adresse-introuvable" replace />}
+        />
       </Routes>
       <Footer />
     </BrowserRouter>
