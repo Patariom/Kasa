@@ -12,9 +12,17 @@
         justify-content: flex-start;
         height: 111px;
         margin: 20px auto;
+        @include rounded-corner-medium;
     }
     @include tablet-responsive {
         margin: 40px auto;
+    }
+    &--higher {
+        @include smartphone-responsive {
+            justify-content: flex-start;
+            height: 223px;
+            margin: 20px auto;  
+        }
     }
     &::before{
         position: absolute;

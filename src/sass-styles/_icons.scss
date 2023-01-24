@@ -1,0 +1,31 @@
+//Expand Icon for Collapse Component 
+.expand_icon {
+    color: white;
+    transition: transform 200ms ease-in-out;
+    @include smartphone-responsive {
+    width: 18px;         
+    }  
+    &--opened {
+    transform:rotate(-180deg);      
+    transition: transform 200ms ease-in-out;      
+    }
+}
+
+
+//Arrow Icon for Carousel Component 
+.arrow {
+        height: 80px;
+        @include smartphone-responsive {
+        height: 24px;
+        }
+        @include tablet-responsive {
+        height: 56px;
+        }
+        &--backward {
+        transform:rotate(-180deg);    
+        }
+    }
+    
+        
+
+

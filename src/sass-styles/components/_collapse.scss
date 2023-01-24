@@ -36,16 +36,7 @@
                 font-size: 13px;
             }
         }
-        &__icon {
-            color: white;
-            transition: transform 200ms ease-in-out;
-            @include smartphone-responsive {
-                width: 18px;           
-            }
-            &--opened {
-                transform:rotate(-180deg);            
-            }
-        }
+
     }
     &__text {
         width: 100%;

@@ -13,7 +13,11 @@ import rentalList from '../../data/logements.json'
 function Home() {
   return (
     <div>
-      <Banner picture={homeBanner} title="Chez vous, partout et ailleurs" />
+      <Banner
+        picture={homeBanner}
+        title="Chez vous, partout et ailleurs"
+        className="banner"
+      />
       <section className="rental-section">
         <div className="rental-section__cards-container">
           {rentalList.map((rental) => (

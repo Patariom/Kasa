@@ -28,7 +28,11 @@ const values = [
 function AboutKasa() {
   return (
     <div>
-      <Banner picture={aboutBanner} title="" />
+      <Banner
+        picture={aboutBanner}
+        title=""
+        className="banner banner--higher"
+      />
       <section className="kasa-values">
         {values.map((item) => (
           <Collapse

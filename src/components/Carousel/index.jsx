@@ -39,23 +39,22 @@ function Carousel({ slides }) {
       </div>
       {length > 1 && (
         <div className="carousel__commands">
-          <div className="carousel__commands__arrows">
-            <button
-              className="carousel__commands__arrows__arrow carousel__commands__arrows__arrow--backward"
-              onClick={previousSlide}
-            >
-              <img src={Arrow} alt="Précédent"></img>
-            </button>
-            <button
-              className="carousel__commands__arrows__arrow"
-              onClick={nextSlide}
-            >
-              <img src={Arrow} alt="Suivant"></img>
-            </button>
-          </div>
+          <button
+            className="carousel__commands__buttons"
+            onClick={previousSlide}
+          >
+            <img
+              className="arrow arrow--backward"
+              src={Arrow}
+              alt="Précédent"
+            ></img>
+          </button>
           <p className="carousel__commands__photocount">
             {currentSlide + 1}/{pics.length}
           </p>
+          <button className="carousel__commands__buttons" onClick={nextSlide}>
+            <img className="arrow" src={Arrow} alt="Suivant"></img>
+          </button>
         </div>
       )}
     </div>
