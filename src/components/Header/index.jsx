@@ -13,7 +13,7 @@ const navLink = [
 //Component
 function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <Link to="/">
         <img className="header__logo" src={logo} alt="Kasa" />
       </Link>
@@ -30,7 +30,7 @@ function Header() {
           </NavLink>
         ))}
       </nav>
-    </div>
+    </header>
   )
 }
 
