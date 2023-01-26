@@ -19,7 +19,7 @@ This project uses the following tools :
 :arrow_right: Dart-Sass ([Sass Website](https://sass-lang.com/dart-sass))  
 
 The project was launched with [Create-React-App](https://github.com/facebook/create-react-app)  
-You will have to have Node installed : [Node Website](https://nodejs.org/fr/)  
+You will have to have Node (v14 or more) installed : [Node Website](https://nodejs.org/fr/)  
 
 ### How to install
 
