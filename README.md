@@ -1,10 +1,10 @@
 # Kasa
 
-<img width="500" alt="ImageWebsite" src="https://github.com/Patariom/kasa/blob/dev/public/cover%20img/ImageWebsite.PNG?raw=true">
+<img alt="Simulation de rendu du site Kasa" src="https://github.com/Patariom/Kasa/blob/main/public/cover%20img/220207_KasaMockup.png?raw=true">
 
 ## English
 
-(click on the link to go directly to the [french version](#français))
+(cliquez sur le lien pour aller à la [version française](#français))
 
 _This work is the final project of OpenClassrooms Web Developer training._  
 This repo contains the Kasa web app.  
